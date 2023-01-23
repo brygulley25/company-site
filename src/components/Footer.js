@@ -1,0 +1,84 @@
+import React from 'react';
+import './Footer.css';
+import { Button } from './Button';
+import { Link } from 'react-router-dom';
+
+function Footer() {
+  return (
+    <div className='footer-container'>
+      <section className='footer-subscription'>
+        <p className='footer-subscription-heading'>
+          Be the First to Know About Our Web Development Services and Offers        </p>
+        <p className='footer-subscription-text'>
+          You can unsubscribe at any time.
+        </p>
+        <div className='input-areas'>
+          <form>
+            <input
+              className='footer-input'
+              name='email'
+              type='email'
+              placeholder='Your Email'
+            />
+            <Button buttonStyle='btn--outline'>Subscribe</Button>
+          </form>
+        </div>
+      </section>
+      <div class='footer-links'>
+        <div className='footer-link-wrapper'>
+          <div class='footer-link-items'>
+            <h2>About Us</h2>
+            <Link to='/sign-up'>Sign up for a free consultation today and take the first step towards a successful website</Link>
+            <Link to='/'>Testimonials</Link> 
+            
+          </div>
+          <div class='footer-link-items'>
+            <h2>Contact Us</h2>
+            <Link to='/'>Contact</Link>
+            
+          </div>
+        </div>
+        <div className='footer-link-wrapper'>
+          
+          <div class='footer-link-items'>
+            <h2>Social Media</h2>
+            <Link to='https://www.instagram.com/divine_designllc/'>Instagram</Link>
+            <Link to='https://www.facebook.com/divine_designllc'>Facebook</Link>            
+          </div>
+        </div>
+      </div>
+      <section class='social-media'>
+        <div class='social-media-wrap'>
+          <div class='footer-logo'>
+            <Link to='/' className='social-logo'>
+              <img src="./public/images/img4.jpg" alt="DivineDesign" />
+              <i class='fab fa-typo3' />
+            </Link>
+          </div>
+          <small class='website-rights'>Divine Design © 2023</small>
+          <div class='social-icons'>
+            <Link
+              class='social-icon-link facebook'
+              to='/'
+              target='_blank'
+              aria-label='Facebook'
+            >
+              <i class='fab fa-facebook-f' />
+            </Link>
+            <Link
+              class='social-icon-link instagram'
+              to='/'
+              target='_blank'
+              aria-label='Instagram'
+            >
+              <i class='fab fa-instagram' />
+            </Link>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Footer;
