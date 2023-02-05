@@ -1,0 +1,51 @@
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+  
+.service-box {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+}
+  
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+h1{
+    padding-top: 20px;
+    color: #1565C0;
+}
+  
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1565C0;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+  
+li {
+   margin: 10px 0;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+
+  
+  
+ 

@@ -1,30 +1,32 @@
 import '../../App.css';
-import aboutus from './images/aboutus.PNG';
 import founder from './images/founder.jpg';
-
-
 import React from 'react';
 
 const About = () => {
-    return (
-        <div className='about'>
-            <div className='about-image'>
-                <img src={aboutus} alt='About Us'/>
-            </div>
-            <div className='about-text'>
-                <h1>About Us</h1>
-                <p> Divine Design is a company that helps people make websites. They talk to you and make a plan for your website, then they make it happen. They have a team of people who know how to make websites look good and work well. You can tell them what you want on your website and they will make it happen. They also have extra services you can add to make your website even better, like making sure it works fast and people can find it easily. They also have a free trial to try it out before you pay for it. They make websites with love and care. </p>
-            </div>
-            <div className='founder-image'>
-                <img src={founder} alt='founder'/>
-            </div>
-            <div className='founder-text'>
-                <h2>Founder</h2>
-                <p>Bryson Gulley is the founder of Divine Design, a web design and development company. He uses his skills and expertise in web design and development to help businesses grow and reach their potential. With his vibrant, friendly and welcoming energy, Bryson is dedicated to understanding his clients' needs and creating custom solutions to help them achieve their goals. He is well-versed in various programming languages such as HTML, CSS, JavaScript, and PHP, and uses these languages to create websites that are both visually appealing and functional. His clients can trust that Bryson's expertise and passion for web design and development will leave them feeling satisfied, delighted and fulfilled with the end result.</p>
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className="about">
+      <div className="about-section">
+        
+        
+        <p className='about-text'>
+        <h1 >About Us</h1>
+        At Divine Design, we understand the struggle of finding a web developer who truly brings your vision to life. As business owners, you deserve a partner who will join you on the journey to bring your website dreams to reality. That's why we offer an easy-to-use platform, complete with a quote, timeline, and a personalized questionnaire to get started. With just one click, you can have access to a top-notch website with all the features you need. And for those who want the added convenience of web hosting, maintenance, and SEO services, we offer a one-month free trial with flexible month-to-month subscriptions that you can cancel anytime. At Divine Design, passion and profession come together to create the perfect website for your business.
+        </p>
+      </div>
+      <div className="founder-section">
+        
+        <p className='founder-text'>
+        <h2 className='founder-title'>Founder</h2>
+        <img src={founder} alt="Founder" className='founder-image' />
+        Bryson Gulley, the founder and lead developer of Divine Design, is a talented professional with an exceptional set of skills. He excels in HTML, CSS, JavaScript, and Node.js and leverages his expertise to help businesses grow with custom web design and development solutions. With a friendly approach and unwavering dedication to client satisfaction, Bryson takes the time to understand the specific needs of each business he works with, and provides tailored solutions to help them reach their goals.
+
+        To ensure the best design possible, Bryson has added Figma to his skillset, allowing him to create visually stunning designs with ease. Figma is a powerful design tool that offers real-time collaboration and streamlines the design process, making it easier for Bryson to create beautiful, functional designs that meet the unique needs of each client. Whether you need a new website or a redesign of an existing one, Bryson and his team at Divine Design have the skills and expertise to make your vision a reality.
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default About;
+
 
