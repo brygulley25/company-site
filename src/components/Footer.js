@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import Button  from './Button';
+// import Button  from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
@@ -12,12 +12,12 @@ const Footer = () => (
     <div className="footer-container">
     <section className="footer-subscription">
       <h2 className="footer-subscription-heading">
-        Be the First to Know About Our Web Development Services and Offers
+        Follow Us and Be the First to Know About Our Web Development Services and Offers
       </h2>
-      <p className="footer-subscription-text">
+      {/* <p className="footer-subscription-text">
         You can unsubscribe at any time.
-      </p>
-      <div className="input-areas">
+      </p> */}
+      {/* <div className="input-areas">
         <form>
           <input
             className="footer-input"
@@ -26,22 +26,21 @@ const Footer = () => (
             placeholder="Your Email" />
           <Button buttonStyle="btn--outline">Subscribe</Button>
         </form>
-      </div>
+      </div> */}
     </section>
     <div className="footer-links">
       <div className="footer-link-wrapper">
         <div className="footer-link-items">
           <h3>About Us</h3>
-          <Link to="/sign-up">
-            Sign up for a free consultation today and take the first step towards
-            a successful website
+          <Link to="/about">
+            Learn more about the brand
           </Link>
 
         </div>
       </div>
       <div className="footer-link-wrapper">
         <div className="footer-link-items">
-          <h3>Contact Us</h3>
+          <h3>Contact Us & Follow us</h3>
           <Link to="https://www.instagram.com/divine_designllc/">
             Instagram
           </Link>

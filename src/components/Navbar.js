@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Button   from './Button';
+import React, { useState } from 'react';
+// import Button   from './Button';
 import { Link } from 'react-router-dom';
 import src from './pages/images/img1.jpg';
 import './Navbar.css';
@@ -9,24 +9,24 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+  // const showButton = () => {
+  //   if (window.innerWidth <= 960) {
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
+  //   }
+  // };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
 
-  window.addEventListener('resize', showButton);
+  // window.addEventListener('resize', showButton);
 
   return (
     <nav className="navbar">
@@ -53,7 +53,7 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
@@ -61,11 +61,11 @@ const Navbar = () => {
               >
                 Sign Up
               </Link>
-            </li>
+            </li> */}
           </ul>
-        {button && (
+        {/* {button && (
           <Button className="nav-links-mobile" buttonStyle="btn--outline">SIGN UP</Button>
-        )}
+        )} */}
       </div>
     </nav>
   );
